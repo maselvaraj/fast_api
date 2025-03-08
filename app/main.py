@@ -13,7 +13,7 @@ app.include_router(router)
 @app.get("/", tags=["Root"])
 def read_root():
     logger.info("Root endpoint was accessed")
-    return {"message": "Hello, World!"}
+    return {"message": "Hello, FOSSASIA!"}
 
 if __name__ == "__main__":
     uvicorn.run("app.main:app", host="0.0.0.0", port=8000, reload=True)

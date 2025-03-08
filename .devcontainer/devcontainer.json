@@ -1,14 +1,19 @@
 {
   "name": "FastAPI Dev Container",
   "dockerFile": "dev.Dockerfile",
-  "forwardPorts": [8000],
-  "mounts": ["source=${localWorkspaceFolder},target=/workspace,type=bind"],
-  "settings": {
-    "python.linting.enabled": true,
-    "editor.formatOnSave": true
-  },
-  "extensions": [
-    "ms-python.python",
-    "ms-python.vscode-pylance"
-  ]
+  "forwardPorts": [
+    8000
+  ],
+  "mounts": [
+    "source=${localWorkspaceFolder},target=/workspace,type=bind"
+  ],
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "python.linting.enabled": true,
+        "editor.formatOnSave": true
+      },
+      "extensions": ["ms-python.python", "ms-python.vscode-pylance"]
+    }
+  }
 }
